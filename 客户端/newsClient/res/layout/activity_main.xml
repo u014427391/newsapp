@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+<!--  
+  <com.news.widget.Topbar
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/app_name"
+      android:id="@+id/id_topbar"
+      android:gravity="center_vertical"
+      custom:lefttext="@string/app_name"
+      custom:lefttextcolor="@color/white"
+      custom:lefttextsize="12sp"
+      custom:leftdrawable="@drawable/ic_drawer"
+      custom:rightbackground="@drawable/ic_menu_search"
+      custom:rightwidth="35dp"
+      custom:rightheight="35dp"
+      />
+-->
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:id="@+id/fg_content"/>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_Gray" />
+    
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+         >
+
+        <RadioButton
+            android:id="@+id/rb_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_news_icon"
+            android:gravity="center_vertical"
+            android:onClick="onNewsClicked"
+            android:text="@string/getNews"
+            android:textColor="@color/tab_text_bg" />
+
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_message_icon"
+            android:gravity="center_horizontal"
+            android:onClick="onMessageClicked"
+            android:text="@string/message"
+            android:textColor="@color/tab_text_bg" />
+
+        <RadioButton
+            android:id="@+id/rb_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_found_icon"
+            android:gravity="center_horizontal"
+            android:onClick="onFoundClicked"
+            android:text="@string/found"
+            android:textColor="@color/tab_text_bg" />
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_my_icon"
+            android:gravity="center_horizontal"
+            android:onClick="onMyClicked"
+            android:text="@string/me"
+            android:textColor="@color/tab_text_bg" />
+    </RadioGroup>
+
+</LinearLayout>

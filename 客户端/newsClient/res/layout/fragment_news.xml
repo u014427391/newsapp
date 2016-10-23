@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@id/main_layout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    >
+    
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="45dp"
+	    android:layout_alignParentTop="true"
+	    android:background="@color/topbar_bg"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="5dp" >
+    
+    	<Button
+			android:id="@id/titlebar_refresh"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/takeout_ic_progress"
+			android:layout_marginTop="7.0dip"
+			android:layout_marginRight="14.0dip"
+			android:layout_alignParentRight="true"
+			/>
+		<ProgressBar
+			android:id="@id/loadnews_progress"
+			android:layout_width="25.0dip"
+			android:layout_height="25.0dip"
+			android:clickable="false"
+			android:visibility="gone"
+			android:layout_marginRight="20.0dip"
+			android:layout_marginTop="10.0dip"
+			android:layout_alignParentRight="true"
+			style="?android:attr/progressBarStyleLarge" />
+
+		<Button
+		    android:id="@+id/btn_search"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:background="@android:color/transparent"
+		    android:text="@string/app_name"
+		    android:textColor="@color/white"
+		    android:textSize="20sp" />
+        
+   
+</RelativeLayout>
+	
+	<RelativeLayout
+		android:id="@id/categorybar_layout"
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:background="@color/bg_Gray_light"
+		android:layout_marginTop="-1.0dip"
+		>
+		
+		<Button
+			android:id="@id/category_arrow_right"
+			android:layout_width="40dip"
+			android:layout_height="40dip"
+			android:background="@drawable/channel_glide_day_bg"
+			android:layout_marginLeft="2.0dip"
+			android:layout_marginRight="1.0dip"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true" />
+ 		
+		 
+		<HorizontalScrollView   
+			android:id="@id/category_scrollview"
+			android:layout_width="match_parent"
+            android:layout_height="40.0dip"
+			android:layout_marginLeft="1.0dip"
+			android:scrollbars="none"
+			android:layout_toLeftOf="@id/category_arrow_right"
+			>
+		<LinearLayout
+			android:id="@id/category_layout"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+		    />	
+		</HorizontalScrollView>
+		
+    	
+		    
+	</RelativeLayout>
+	
+	<ListView 
+		android:id="@+id/newslist" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:listSelector="@drawable/newslist_item_selector"
+		android:cacheColorHint="#00000000" 
+		android:divider="@drawable/list_separator_line"/>
+	
+	
+	
+</LinearLayout>

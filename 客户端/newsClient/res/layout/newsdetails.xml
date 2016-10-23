@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/newsdetails_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/main_background"
+	android:layout_marginBottom="0.0dip"
+    >
+	<RelativeLayout
+		android:id="@id/newsdetails_titlebar_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="50dp"
+		android:background="@color/topbar_bg"
+		>
+		<Button
+			android:id="@id/newsdetails_titlebar_previous"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="7.0dip"
+			android:layout_marginLeft="5.0dip"
+			android:layout_alignParentLeft="true" 
+			android:background="@drawable/newsdetails_title_previous_btn_selector"
+			android:textSize="14.0sp"
+			android:textStyle="bold"
+			/>
+		<TextView
+			android:id="@id/newsdetails_titlebar_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15.0dip"
+			android:layout_marginTop="10.0dip" 
+			android:layout_toRightOf="@id/newsdetails_titlebar_previous"
+			android:textSize="18.0sp"
+			android:textColor="@color/white"
+			android:text="科技"
+			/>
+		<Button
+			android:id="@id/newsdetails_titlebar_next"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="7.0dip"
+			android:layout_marginRight="5.0dip"
+			android:layout_alignParentRight="true" 
+			android:background="@drawable/newsdetails_title_next_btn_selector"
+			/>
+		<Button
+			android:id="@id/newsdetails_titlebar_comments"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="60.0dip"
+			android:layout_marginTop="9.0dip"
+			android:background="@color/topbar_bg"
+			android:textColor="@color/white"
+			android:text="0评论"
+			/>
+		<ProgressBar
+			android:id="@id/loadnews_progress"
+			android:layout_width="25.0dip"
+			android:layout_height="25.0dip"
+			android:clickable="false"
+			android:visibility="gone"
+			android:layout_marginRight="30.0dip"
+			android:layout_marginTop="10.0dip"
+			android:layout_alignParentRight="true"
+			style="?android:attr/progressBarStyleLarge" />
+	</RelativeLayout>	
+	
+	<ViewFlipper
+		android:id="@id/news_body_flipper"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/main_background"
+		android:layout_marginTop="-12.0dip"
+		android:layout_marginBottom="40.0dip"
+		android:layout_below="@id/newsdetails_titlebar_layout" />
+
+	<include
+		android:id="@id/comments_reply_frame"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		layout="@layout/reply_frame" />
+</RelativeLayout>

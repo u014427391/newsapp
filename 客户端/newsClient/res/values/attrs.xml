@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="com.baidu.AdView">
+		<attr name="backgroundColor" format="color" />
+		<attr name="textColor" format="color" />
+		<attr name="backgroundTransparent" format="integer" />
+		<attr name="adType" format="integer" />
+	</declare-styleable> 
+</resources>

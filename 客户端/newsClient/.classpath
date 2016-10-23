@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="lib" path="lib/android_api.jar"/>
+	<classpathentry kind="lib" path="lib/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="lib/android-support-v7-appcompat.jar"/>
+	<classpathentry kind="lib" path="lib/androidannotations-api-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/umeng-analytics-v5.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/umeng-fb-v4.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/umeng-update-v2.4.2.jar"/>
+	<classpathentry kind="lib" path="lib/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar"/>
+	<classpathentry kind="lib" path="lib/volley.jar"/>
+	<classpathentry kind="lib" path="lib/com.haarman.listviewanimations-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/library.jar"/>
+	<classpathentry kind="lib" path="lib/nineoldandroids-2.4.0.jar"/>
+	<classpathentry kind="lib" path="lib/picasso-2.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/support.jar"/>
+	<classpathentry kind="lib" path="lib/viewpagertransformslibrary.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
